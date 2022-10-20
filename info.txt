@@ -1,0 +1,10 @@
+npx browserslist@latest --update-db
+
+expo doctor --fix-dependencies
+
+yarn add deprecated-react-native-prop-types
+
+
+Error: Requiring module "node_modules\react-native-reanimated\src\index.ts", which threw an exception: Error: Failed to initialize react-native-reanimated library, make sure you followed installation steps here: https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/installation/ 
+1) Make sure reanimated's babel plugin is installed in your babel.config.js (you should have 'react-native-reanimated/plugin' listed there - also see the above link for details) 
+2) Make sure you reset build cache after updating the config, run: yarn start --reset-cache
